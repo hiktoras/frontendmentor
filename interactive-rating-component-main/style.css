@@ -39,11 +39,82 @@ button {
     font-family: inherit;
 }
 
+p {
+
+    line-height: 1.8;
+
+}
+
 .main-container,
 .thank-you {
     background-color: hsl(213, 19%, 18%);
     padding: 1.5rem;
-    border-radius: 0.625rem;
+    border-radius: 0.5rem;
+}
+
+.main-container img {
+    background-color: hsl(216, 12%, 8%);
+    padding: 0.5rem;
+    border-radius: 50%;
+
+
+}
+
+.main-container h1 {
+    color: #fff;
+    margin: 2rem
+}
+
+.main-container p {
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 1rem;
+
+}
+
+.main-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.main-container ul li button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: hsl(213, 20%, 22%);
+    color: #fff;
+    padding-top: 0.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-container ul li button:hover {
+    background-color: hsl(25, 97%, 53%);
+
+}
+
+.main-container ul li button:focus {
+    background-color: hsl(217, 12%, 63%);
+}
+
+.btn-submit {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    width: 100%;
+    padding: 0.8rem 0 0.7rem;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
 }
 
 .attribution {
