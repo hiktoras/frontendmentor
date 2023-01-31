@@ -1,22 +1,33 @@
-const mainContainer = document.querySelector(".container")
-const thanksContainer = document.querySelector(".thank-you")
-const submitButton = document.getElementById("submit-rating")
 const rateAgain = document.getElementById("rate-again")
 const ratings = document.querySelectorAll(".btn")
 const actualRating = document.getElementById("rating")
+const ratingBox = document.querySelector(".rating-box")
+const thanksContainer = document.querySelector(".thank-you")
+const form = document.querySelector(".rating-form");
+let clicked = false
 
-submitButton.addEventListener("click", () => {
-    mainContainer.style.display = "none"
-    thanksContainer.classList.remove("hidden")
+ratings.forEach(rating => {
+    let value = rating.getAttribute('value');
+    rating.addEventListener('click', function () {
+        actualRating.innerHTML = value;
+        console.log(value)
+        clicked = true;
+    });
+});
 
-    ratings.forEach((rating) => {
-        rating.addEventListener("click", () => {
-            actualRating.innerHTML = rating.innerHTML
-        })
-    })
-})
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (clicked) {
+        ratingBox.classList.remove("block")
+        ratingBox.classList.add("hidden")
+        thanksContainer.classList.remove("hidden")
+    }
+});
 
 rateAgain.addEventListener("click", () => {
-    mainContainer.style.display = "block"
     thanksContainer.classList.add("hidden")
-})
+    ratingBox.classList.remove("hidden")
+    clicked = false;
+    actualRating.innerHTML = "1";
+});
