@@ -1,0 +1,209 @@
+p {
+  font-family: Hanken Grotesk;
+  font-style: normal;
+}
+
+.layout {
+  width: 375px;
+  height: 809px;
+  background: var(--White, #ffff);
+}
+.header {
+  width: 375px;
+  height: 356px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 32px 32px;
+  background: var(
+    --Gradient-1,
+    linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%)
+  );
+  box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+}
+
+.title {
+  color: var(--Light-Blue, #cac9ff);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 20px;
+}
+.circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #303b59;
+  margin-left: 120px;
+  fill: var(
+    --Gradient-2,
+    linear-gradient(
+      180deg,
+      #4d21c9 0%,
+      rgba(37, 33, 201, 0) 100%,
+      rgba(37, 33, 201, 0) 100%
+    )
+  );
+}
+
+.score {
+  color: var(--White, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 72px;
+  text-align: center;
+  margin-top: -110px;
+}
+
+.score2 {
+  color: var(--Light-Blue, #cac9ff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-top: -60px;
+}
+.text {
+  color: var(--White, #fff);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+.text1 {
+  color: var(--Light-Blue, #cac9ff);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 70px;
+  width: 260px;
+}
+.text2 {
+  color: var(--Dark-Navy, #303b59);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 24px;
+}
+
+.reactionButton,
+.memoryButton,
+.verbalButton,
+.visualButton {
+  display: flex;
+  width: 315px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  margin: 20px;
+  flex-direction: row;
+}
+
+.reactionButton {
+  color: red;
+  border-radius: 12px;
+  background: var(
+    --red-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #f55
+  );
+}
+.memoryButton {
+  color: #ffb21e;
+  background: var(
+    --yellow-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #ffb21e
+  );
+}
+.verbalButton {
+  color: #00bb8f;
+  background: var(
+    --green-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #00bb8f
+  );
+}
+.visualButton {
+  color: #1125d6;
+  background: var(
+    --blue-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #1125d6
+  );
+}
+.continueButton {
+  width: 315px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 128px;
+  background: var(--Dark-Navy, #303b59);
+  margin-left: 30px;
+}
+.continueText {
+  color: var(--White, #fff);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 15px;
+}
+
+.reactionNumber,
+.memoryNumber,
+.verbalNumber,
+.visualNumber {
+  color: var(--Dark-Navy, #303b59);
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.buttonIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 14px;
+  margin-left: 10px;
+}
+.buttonText {
+  margin-left: 10px;
+}
+.reactionNumber {
+  margin-left: 160px;
+}
+.memoryNumber {
+  margin-left: 160px;
+}
+.verbalNumber {
+  margin-left: 170px;
+}
+
+.visualNumber {
+  margin-left: 170px;
+}

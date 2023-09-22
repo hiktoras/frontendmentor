@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- displays site properly based on user's device -->
+  </head>
+  <body style="background-color: black">
+    <div class="layout">
+      <header class="header">
+        <div><p class="title">Your Result</p></div>
+
+        <section class="circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="140"
+            height="140"
+            viewBox="0 0 140 140"
+            fill="none"
+          >
+            <circle cx="70" cy="70" r="70" fill="url(#paint0_linear_54_23)" />
+            <defs>
+              <linearGradient
+                id="paint0_linear_54_23"
+                x1="70"
+                y1="0"
+                x2="70"
+                y2="140"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#4D21C9" />
+                <stop offset="1" stop-color="#2521C9" stop-opacity="0" />
+                <stop offset="1" stop-color="#2521C9" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <p class="score">76</p>
+          <p class="score2">of 100</p>
+        </section>
+        <article>
+          <p class="text">Great</p>
+          <p class="text1">
+            Your performance exceed 65% of the people conducting the test here!
+          </p>
+        </article>
+      </header>
+      <div class="summaryButtons">
+        <p class="text2">Summary</p>
+        <div class="reactionButton">
+          <embed src="./svg/icons.svg" type="" class="buttonIcon" />
+          <p class="buttonText">Reaction</p>
+          <p class="reactionNumber">80<span style="opacity: 0.5">/100</span></p>
+        </div>
+        <div class="memoryButton">
+          <embed src="./svg/memory.svg" type="" class="buttonIcon" />
+          <p class="buttonText">Memory</p>
+          <p class="memoryNumber">92<span style="opacity: 0.5">/100</span></p>
+        </div>
+        <div class="verbalButton">
+          <embed src="./svg/verbal.svg" type="" class="buttonIcon" />
+          <p class="buttonText">Verbal</p>
+          <p class="verbalNumber">61<span style="opacity: 0.5">/100</span></p>
+        </div>
+        <div class="visualButton">
+          <embed src="./svg/visual.svg" type="" class="buttonIcon" />
+          <p class="buttonText">Visual</p>
+          <p class="visualNumber">73<span style="opacity: 0.5">/100</span></p>
+        </div>
+        <div class="continueButton">
+          <p class="continueText">Continue</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
