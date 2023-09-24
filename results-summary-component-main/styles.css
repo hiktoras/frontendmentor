@@ -161,6 +161,11 @@ p {
   border-radius: 128px;
   background: var(--Dark-Navy, #303b59);
   margin-left: 30px;
+
+  
+}
+.continueButton:hover {background-color: #4d21c9;
+
 }
 .continueText {
   color: var(--White, #fff);
@@ -170,6 +175,7 @@ p {
   font-weight: 700;
   line-height: normal;
   padding-top: 15px;
+  
 }
 
 .reactionNumber,
